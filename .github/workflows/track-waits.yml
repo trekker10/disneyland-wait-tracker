@@ -22,6 +22,14 @@ on:
     - cron: "*/30 * * * *"
   workflow_dispatch: {}   # lets you manually trigger a run from the Actions tab
 
+# Prevents overlapping runs. If a run is still going when the next one is
+# due, the new one queues up and waits instead of racing against a manual
+# edit or another run for the same file. This is what stops "half old
+# format, half new format" file corruption from happening again.
+concurrency:
+  group: track-waits-csv
+  cancel-in-progress: false
+
 # Needed so the workflow is allowed to push the updated CSV back to the repo
 permissions:
   contents: write
@@ -50,4 +58,9 @@ jobs:
           git config user.email "actions@github.com"
           git add disneyland_wait_times.csv
           git diff --staged --quiet || git commit -m "Log wait times $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          # Pull any changes that landed since checkout (e.g. a manual
+          # edit/delete you just made) before pushing, so this run's
+          # commit lands on top of the latest state instead of an
+          # outdated one.
+          git pull --rebase origin main
           git push
