@@ -1,0 +1,53 @@
+# .github/workflows/track-waits.yml
+#
+# Runs disneyland_wait_tracker.py every 30 minutes on GitHub's servers.
+# The script itself skips logging outside 8am-10pm Pacific, so this can
+# just fire year-round without you touching the schedule.
+#
+# SETUP:
+# 1. Create a new GitHub repo (public or private both work).
+# 2. Put disneyland_wait_tracker.py in the repo root.
+# 3. Put this file at .github/workflows/track-waits.yml (exact path matters).
+# 4. Commit and push. Check the "Actions" tab on GitHub - it'll start
+#    running automatically on the schedule below, no extra setup needed.
+# 5. Each run appends to disneyland_wait_times.csv and commits it back
+#    to the repo, so your data accumulates in git history.
+
+name: Track Disneyland Wait Times
+
+on:
+  schedule:
+    # Every 30 minutes, all day UTC. The script itself filters to
+    # 8am-10pm Pacific, so it's a no-op outside that window.
+    - cron: "*/30 * * * *"
+  workflow_dispatch: {}   # lets you manually trigger a run from the Actions tab
+
+# Needed so the workflow is allowed to push the updated CSV back to the repo
+permissions:
+  contents: write
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Poll wait times
+        run: python disneyland_wait_tracker.py --once
+
+      - name: Commit and push updated CSV
+        run: |
+          git config user.name "wait-time-bot"
+          git config user.email "actions@github.com"
+          git add disneyland_wait_times.csv
+          git diff --staged --quiet || git commit -m "Log wait times $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          git push
