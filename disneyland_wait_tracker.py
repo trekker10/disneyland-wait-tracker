@@ -35,6 +35,8 @@ API_URL = "https://queue-times.com/parks/{park_id}/queue_times.json"
 DEFAULT_OUTFILE = "disneyland_wait_times.csv"
 PARK_TZ = ZoneInfo("America/Los_Angeles")
 CSV_HEADERS = [
+    "date",
+    "time",
     "collected_at_utc",
     "land",
     "ride",
@@ -60,7 +62,11 @@ def fetch_wait_times(park_id: int) -> list[dict]:
     resp.raise_for_status()
     data = resp.json()
 
-    collected_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    now_utc = datetime.now(timezone.utc)
+    now_pt = now_utc.astimezone(PARK_TZ)
+    collected_at = now_utc.isoformat(timespec="seconds")
+    date_str = now_pt.strftime("%m/%d/%Y")
+    time_str = now_pt.strftime("%I:%M %p").lstrip("0")  # e.g. "8:15 AM", not "08:15 AM"
     rows = []
 
     # Most parks return {"lands": [...]}; some flat parks return {"rides": [...]}
@@ -68,15 +74,17 @@ def fetch_wait_times(park_id: int) -> list[dict]:
     if lands:
         for land in lands:
             for ride in land.get("rides", []):
-                rows.append(_ride_row(collected_at, land.get("name", ""), ride))
+                rows.append(_ride_row(date_str, time_str, collected_at, land.get("name", ""), ride))
     for ride in data.get("rides", []):
-        rows.append(_ride_row(collected_at, "", ride))
+        rows.append(_ride_row(date_str, time_str, collected_at, "", ride))
 
     return rows
 
 
-def _ride_row(collected_at: str, land_name: str, ride: dict) -> dict:
+def _ride_row(date_str: str, time_str: str, collected_at: str, land_name: str, ride: dict) -> dict:
     return {
+        "date": date_str,
+        "time": time_str,
         "collected_at_utc": collected_at,
         "land": land_name,
         "ride": ride.get("name"),
