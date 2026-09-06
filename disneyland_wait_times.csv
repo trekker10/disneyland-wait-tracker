@@ -111,3 +111,59 @@ collected_at_utc,land,ride,wait_minutes,is_open,last_updated
 09/06/2026,2:16 PM,2026-09-06T21:16:08+00:00,Tomorrowland,Pixar Short Film Spotlight,0,False,2026-09-06T21:10:55.000Z
 09/06/2026,2:16 PM,2026-09-06T21:16:08+00:00,Tomorrowland,Space Mountain,65,True,2026-09-06T21:10:55.000Z
 09/06/2026,2:16 PM,2026-09-06T21:16:08+00:00,Tomorrowland,Star Tours - The Adventures Continue,20,True,2026-09-06T21:10:55.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Adventureland,Adventureland Treehouse inspired by Walt Disney’s Swiss Family Robinson,0,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Adventureland,Indiana Jones™ Adventure,45,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Adventureland,Jungle Cruise,25,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Adventureland,Walt Disney's Enchanted Tiki Room,0,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Bayou Country,Davy Crockett's Explorer Canoes,0,False,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Bayou Country,The Many Adventures of Winnie the Pooh,10,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Bayou Country,Tiana's Bayou Adventure,25,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Bayou Country,Tiana's Bayou Adventure Single Rider,0,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Fantasyland,"""it's a small world""",5,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Fantasyland,Alice in Wonderland,0,False,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Fantasyland,Bluey’s Best Day Ever! at Fantasyland Theatre,0,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Fantasyland,Casey Jr. Circus Train,10,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Fantasyland,Dumbo the Flying Elephant,30,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Fantasyland,King Arthur Carrousel,5,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Fantasyland,Mad Tea Party,0,False,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Fantasyland,Matterhorn Bobsleds,35,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Fantasyland,Meet Disney Princesses at Royal Hall,30,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Fantasyland,Mr. Toad's Wild Ride,0,False,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Fantasyland,Peter Pan's Flight,35,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Fantasyland,Pinocchio's Daring Journey,15,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Fantasyland,Sleeping Beauty Castle Walkthrough,0,False,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Fantasyland,Snow White's Enchanted Wish,20,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Fantasyland,Storybook Land Canal Boats,20,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Frontierland,Big Thunder Mountain Railroad,40,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Frontierland,Frontierland Shootin' Exposition,0,False,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Frontierland,Mark Twain Riverboat,10,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Frontierland,Pirate's Lair on Tom Sawyer Island,0,False,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Frontierland,Sailing Ship Columbia,0,False,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Main Street U.S.A,Disneyland Railroad,5,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Main Street U.S.A,Great Moments with Mr. Lincoln,0,False,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Main Street U.S.A,Main Street Cinema,0,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Main Street U.S.A,Main Street Vehicles,0,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Main Street U.S.A,Opera House - Walt Disney - A Magical Life,0,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Main Street U.S.A,The Disney Gallery,0,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Main Street U.S.A,Walt Disney - A Magical Life,0,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Mickey's Toontown,Chip 'n' Dale's GADGETcoaster,35,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Mickey's Toontown,Donald's Duck Pond,0,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Mickey's Toontown,Goofy's How-to-Play Yard,0,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Mickey's Toontown,Mickey & Minnie's Runaway Railway,45,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Mickey's Toontown,Mickey's House and Meet Mickey Mouse,45,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Mickey's Toontown,Mickey's House and Meet Mickey Mouse,0,False,2026-09-06T19:50:39.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Mickey's Toontown,Minnie's House,0,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Mickey's Toontown,Roger Rabbit's Car Toon Spin,40,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,New Orleans Square,Haunted Mansion Holiday,45,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,New Orleans Square,Pirates of the Caribbean,30,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Star Wars: Galaxy's Edge,Millennium Falcon: Smugglers Run,20,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Star Wars: Galaxy's Edge,Millennium Falcon: Smugglers Run Single Rider,0,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Star Wars: Galaxy's Edge,Star Wars: Rise of the Resistance,50,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Tomorrowland,Astro Orbitor,0,False,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Tomorrowland,Autopia,45,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Tomorrowland,Buzz Lightyear Astro Blasters,0,False,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Tomorrowland,Disneyland Monorail,0,False,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Tomorrowland,Finding Nemo Submarine Voyage,10,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Tomorrowland,Pixar Short Film Spotlight,0,False,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Tomorrowland,Space Mountain,65,True,2026-09-06T21:16:33.000Z
+09/06/2026,2:19 PM,2026-09-06T21:19:29+00:00,Tomorrowland,Star Tours - The Adventures Continue,20,True,2026-09-06T21:16:33.000Z
