@@ -17,9 +17,11 @@ name: Track Disneyland Wait Times
 
 on:
   schedule:
-    # Every 30 minutes, all day UTC. The script itself filters to
-    # 8am-10pm Pacific, so it's a no-op outside that window.
-    - cron: "*/30 * * * *"
+    # Every 30 minutes, offset to :07 and :37 instead of :00/:30.
+    # GitHub's scheduler gets heavily congested at the exact hour/half-hour
+    # marks (nearly everyone schedules cron jobs there), which causes
+    # delayed or skipped runs. Odd offsets like this run far more reliably.
+    - cron: "7,37 * * * *"
   workflow_dispatch: {}   # lets you manually trigger a run from the Actions tab
 
 # Prevents overlapping runs. If a run is still going when the next one is
